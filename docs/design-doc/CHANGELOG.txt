@@ -1,6 +1,13 @@
 Changelog
 =========
 
+Version v0.2.0 - 2025.10.20
+---------------------------
+ADDED:
+    - Description of a Sudoku puzzle.
+    - Explained backtracking algorithm.
+    - Attached image about the backtrackign algorithm.
+
 Version v0.1.0 - 2025.10.20
 ---------------------------
 ADDED:
