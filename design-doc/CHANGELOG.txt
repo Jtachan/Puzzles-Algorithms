@@ -1,0 +1,16 @@
+Changelog
+=========
+
+Version vX.Y.Z - YYYY.mm.dd (release date)
+---------------------------
+ADDED:
+    - 
+
+CHANGED:
+    - 
+
+FIXED:
+    - 
+
+DEPRECATED:
+    - 
