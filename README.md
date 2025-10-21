@@ -10,11 +10,11 @@ Depending on the puzzle, other rules might apply over the board.
 
 The following are the puzzles (alphabetically sorted) contained within the repository:
 
-- Nonogram [WIP]
-- Numberlink [WIP]
-- Queens [WIP]
-- [Sudoku](./docs/sudoku/readme.md)
-- Takuzu [WIP]
+- [Nonogram](#nonogram)
+- [Numberlink](#numberlink-connecting-pipes)
+- [Queens](#queens)
+- [Sudoku](#sudoku)
+- [Takuzu](#takuzu)
 
 ## Puzzles Descriptions
 
@@ -37,7 +37,7 @@ Without more information, this column might have multiple solutions as:
 - The column can start or end either with a colored or a non-colored cell.
 - The set of colored cells must be separated by at least one uncolored cell. Thus, the separation by uncolored cells can be greater than 1.
 
-<img src="./docs/imgs/Nonogram.jpg" alt="Solved Nonogram board 10 by 10 showing the draw of the outline of a heart">
+<img src="./docs/imgs/Nonogram.jpg" alt="Solved Nonogram board 10 by 10 showing the draw of the outline of a heart" align="center" height="300">
 
 > WIP: I am working on extra documentation about this puzzle and its algorithms.
 
@@ -62,7 +62,7 @@ Even though the previous definition corresponds to a classical Sudoku, other ver
 - Each major cell is part of 2 different Sudoku boards.
 - Another different rule modify the previous definition of a Sudoku.
 
-<img src="./docs/imgs/Sudoku.png" alt="Solved classical Sudoku (9x9 board)">
+<img src="./docs/imgs/Sudoku.png" alt="Solved classical Sudoku (9x9 board)" align="center" height="300">
 
 [Read about this puzzle algorithms](./docs/sudoku/readme.md).
 
@@ -74,6 +74,6 @@ The general rules for any Takuzu are:
 - Each row and column must contain the same number of each symbol.
 - No more than two equal symbols can be connected horizontally or vertically.
 
-<img src="./docs/imgs/Takuzu.png" alt="Solved 4x4 Takuzu with 1s and 0s as symbols.">
+<img src="./docs/imgs/Takuzu.png" alt="Solved 4x4 Takuzu with 1s and 0s as symbols." align="center" height="300">
 
 > WIP: I am working on extra documentation about this puzzle and its algorithms.
