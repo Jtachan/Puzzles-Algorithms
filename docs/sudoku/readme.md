@@ -1,13 +1,6 @@
 ## Sudoku
 
-A Sudoku is a puzzle in which missing numbers are to be filled into a 9 by 9 grid of squares which are subdivided into 3 by 3 boxes so that every row, every column, and every box contains the numbers 1 through 9.
 
-Other version of Sudoku exists where one or more of the following rules apply:
-
-- The board is size M by N, where at least one M or N is different to 9.
-- The board is subdivided into regions. The numbers stated within each region must add to a final number.
-- Each major cell is part of 2 different Sudoku boards.
-- Another different rule modify the previous definition of a Sudoku.
 
 ### Generator: Mathematical approach
 
