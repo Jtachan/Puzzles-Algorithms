@@ -1,23 +1,3 @@
-# Project Design Document
-
-## Overview
-
-Within this document is stated the general logic to **generate and solve** some board puzzles.
-
-Here is defined a **board puzzle** as any logic puzzle that takes place at an NxM chess board.
-This board does not require to have white and black cells, but it is divided into single cells.
-Depending on the puzzle, other rules might apply over the board.
-
-The following are the puzzles (alphabetically sorted) contained within the repository:
-
-- Nonogram [WIP]
-- Pipes [WIP]
-- Queens [WIP]
-- [Sudoku](#sudoku)
-- Tango [WIP]
-
----
-
 ## Sudoku
 
 A Sudoku is a puzzle in which missing numbers are to be filled into a 9 by 9 grid of squares which are subdivided into 3 by 3 boxes so that every row, every column, and every box contains the numbers 1 through 9.
@@ -59,7 +39,7 @@ This algorithm iterates over the next five steps:
 4. **Go back** to the last created branch if the puzzle reach a tile in which no valid guesses can be done.
 5. **Iterate** until a solution is found.
 
-![2x2 Sudoku board displaying a decision tree of the previous stated algorithm](../imgs/sudoku_decision_tree.png)
+![2x2 Sudoku board displaying a decision tree of the previous stated algorithm](./sudoku_decision_tree.png)
 
 These steps can lead to two possible outcomes:
 
