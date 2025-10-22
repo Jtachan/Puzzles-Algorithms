@@ -5,7 +5,7 @@
 Within this document is stated the general logic to **generate and solve** some board puzzles.
 
 Here is defined a **board puzzle** as any logic puzzle that takes place at an NxM chess board.
-This board does not require to have white and black cells, but it is divided into single cells.
+This board does not require having white and black cells, but it is divided into single cells.
 Depending on the puzzle, other rules might apply over the board.
 
 The following are the puzzles (alphabetically sorted) contained within the repository:
@@ -44,7 +44,7 @@ Without more information, this column might have multiple solutions as:
 ### Numberlink (connecting pipes)
 
 **Numberlink** is a logic puzzle displayed on an $M*N$ board, where $k$ pair of numbers are placed.
-The solution for the puzzle requires to join the path of all pair of numbers filling up all the cells of the grid.
+The solution for the puzzle requires joining the path of all pairs of numbers filling up all the cells of the grid.
 
 <img src="./docs/imgs/Numberlink.png" alt="Solved Numberlink board 7 by 7 with 5 pairs of numbers" width="300">
 
@@ -52,7 +52,7 @@ The solution for the puzzle requires to join the path of all pair of numbers fil
 
 ### Queens
 
-The **Queens** logic puzzle is a variation to the [_Eight queens chess puzzle_](https://en.wikipedia.org/wiki/Eight_queens_puzzle).
+The **Queens** logic puzzle is a variation to the [_Eight-queen chess puzzle_](https://en.wikipedia.org/wiki/Eight_queens_puzzle).
 
 Each Queens puzzle is contained in a NxN board, where N queens (chess piece) must be placed.
 The board is also created with N regions, of different shapes and areas.
@@ -72,16 +72,16 @@ The rules for solving the puzzle are:
 
 A **Sudoku** is a puzzle in which missing numbers are to be filled into a 9 by 9 grid of squares which are subdivided into 3 by 3 boxes so that every row, every column, and every box contains the numbers 1 through 9.
 
-Even though the previous definition corresponds to a classical Sudoku, other versions exists where one or more of the following rules apply:
+Even though the previous definition corresponds to a classical Sudoku, other versions exist where one or more of the following rules apply:
 
 - The board is size M by N, where at least one M or N is different to 9.
-- The board is subdivided into regions. The numbers stated within each region must add to a final number.
+- The board is subdivided into regions. The numbers stated within each region must be added to a final number.
 - Each major cell is part of 2 different Sudoku boards.
-- Another different rule modify the previous definition of a Sudoku.
+- Another different rule modifies the previous definition of a Sudoku.
 
 <img src="./docs/imgs/Sudoku.png" alt="Solved classical Sudoku (9x9 board)" width="300">
 
-[Read about this puzzle algorithms](./docs/sudoku/readme.md).
+[Read about this puzzle algorithm](./docs/sudoku/readme.md).
 
 ### Takuzu
 

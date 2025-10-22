@@ -8,9 +8,6 @@ nav:
 
 theme:
   name: material
-  # color scheme configuration
-  # changing between light and dark mode is already enabled
-  # available primary colors: https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#primary-color
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -43,27 +40,3 @@ markdown_extensions:
       permalink: true
 plugins:
   - search
-  - mkdocstrings:
-    handlers:
-      python:
-        options:
-          docstring_style: numpy
-          # Keeps a good heading hierarchy:
-          show_root_heading: true
-          show_root_full_path: false
-          # Whether the source code should be displayed in the documentation:
-          show_source: false
-          # Whether the general class inheritance is displayed or not.
-          # This is still modifiable at each class individually through the same 'options' shema.
-          show_bases: false
-          # Merging the description of the constructor into the class' main docstring.
-          merge_init_into_class: true
-          # Filter to remove all dunder methods from the generated docs
-          filters:
-            - "!^__.*__$"
-          extensions:
-            - griffe_pydantic:
-                schema: true
-extra:
-  version:
-    provider: mike # allows deploying versioned documentation for each release
