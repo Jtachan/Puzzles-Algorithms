@@ -37,17 +37,34 @@ Without more information, this column might have multiple solutions as:
 - The column can start or end either with a colored or a non-colored cell.
 - The set of colored cells must be separated by at least one uncolored cell. Thus, the separation by uncolored cells can be greater than 1.
 
-<img src="./docs/imgs/Nonogram.jpg" alt="Solved Nonogram board 10 by 10 showing the draw of the outline of a heart" align="center" height="300">
+<img src="./docs/imgs/Nonogram.jpg" alt="Solved Nonogram board 10 by 10 showing the draw of the outline of a heart" width="300">
 
 > WIP: I am working on extra documentation about this puzzle and its algorithms.
 
 ### Numberlink (connecting pipes)
 
+**Numberlink** is a logic puzzle displayed on an $M*N$ board, where $k$ pair of numbers are placed.
+The solution for the puzzle requires to join the path of all pair of numbers filling up all the cells of the grid.
+
+<img src="./docs/imgs/Numberlink.png" alt="Solved Numberlink board 7 by 7 with 5 pairs of numbers" width="300">
+
 > WIP: I am working on extra documentation about this puzzle and its algorithms.
 
 ### Queens
 
-The **Queens** puzzle is a variation to the [_Eight queens chess puzzle_](https://en.wikipedia.org/wiki/Eight_queens_puzzle)
+The **Queens** logic puzzle is a variation to the [_Eight queens chess puzzle_](https://en.wikipedia.org/wiki/Eight_queens_puzzle).
+
+Each Queens puzzle is contained in a NxN board, where N queens (chess piece) must be placed.
+The board is also created with N regions, of different shapes and areas.
+A starting point for the puzzle is the complete empty board displaying only the regions.
+
+The rules for solving the puzzle are:
+
+- Only one queen can be placed per column and row.
+- A queen cannot be placed at the immediate colindant cells of another queen.
+- Only one queen can be placed per region.
+
+<img src="./docs/imgs/Queens.png" alt="Solved Queens board, displaying all queens and all places that cannot be filled by a queen" width="300">
 
 > WIP: I am working on extra documentation about this puzzle and its algorithms.
 
@@ -62,7 +79,7 @@ Even though the previous definition corresponds to a classical Sudoku, other ver
 - Each major cell is part of 2 different Sudoku boards.
 - Another different rule modify the previous definition of a Sudoku.
 
-<img src="./docs/imgs/Sudoku.png" alt="Solved classical Sudoku (9x9 board)" align="center" height="300">
+<img src="./docs/imgs/Sudoku.png" alt="Solved classical Sudoku (9x9 board)" width="300">
 
 [Read about this puzzle algorithms](./docs/sudoku/readme.md).
 
@@ -74,6 +91,6 @@ The general rules for any Takuzu are:
 - Each row and column must contain the same number of each symbol.
 - No more than two equal symbols can be connected horizontally or vertically.
 
-<img src="./docs/imgs/Takuzu.png" alt="Solved 4x4 Takuzu with 1s and 0s as symbols." align="center" height="300">
+<img src="./docs/imgs/Takuzu.png" alt="Solved 4x4 Takuzu with 1s and 0s as symbols." width="300">
 
 > WIP: I am working on extra documentation about this puzzle and its algorithms.
