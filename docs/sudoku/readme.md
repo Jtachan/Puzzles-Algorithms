@@ -1,7 +1,5 @@
 ## Sudoku
 
-
-
 ### Generator: Mathematical approach
 
 There are two main approaches to generate a Sudoku puzzle.
@@ -11,14 +9,26 @@ The second one is to have a fully solved board, then remove numbers randomly.
 This generator takes the second approach, where it is still needed to generate a fully solved board.
 By completely ignoring hardcoding one solved board, it is crucial to understand the mathematics of the board to be able to generate a new board.
 
-Considering a Sudoku board as an $M*N$ board, stating that $M$ and $N$ can be greater, equal or lower than 9;
+Considering a Sudoku board as an $M*N$ board, stating that $M$ (number or rows) and $N$ (number of columns) can be greater, equal or lower than 9;
 it is definet the number $k$ that defines the maximum value for the numbers to be placed in a row, column or mayor square.
 
 $$
 k = M * N
 $$
 
-Considering the grid that corresponds to the Sudoku board, each minor cell is defined by the matrix coordinates $r$ (row) and $c$ (column).
+Considering the grid that corresponds to the Sudoku board, each minor cell is defined by the matrix coordinates $r$ (row) and $c$ (column), both 0-indexed.
+For each row and column, a unique number can be defined with these coordinates:
+
+$$
+G[r, c] = (r + c) \bmod k + 1
+$$
+
+However, this equation does not satisfy the Sudoku block constraint.
+To do so, the formula requires to be modified to include the dimensions $M$ and $N$.
+
+$$
+G[r, c] = (N * (r \bmod M) + floor(r / M) + c) \bmod (M * N) + 1
+$$
 
 ### Solver: Backtracking algorithm
 
